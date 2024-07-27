@@ -13,6 +13,7 @@ body {
   font-family: "Inter", sans-serif;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #000000;
 }
 
 li {
@@ -35,8 +36,8 @@ a {
   background: #e6533c;
   font-weight: 600;
 }
-header {
-  background-color: #000000;
+.none {
+  display: none;
 }
 nav {
   justify-content: space-between;
@@ -71,6 +72,7 @@ nav .logo p {
   margin-top: 25px;
   align-items: center;
   justify-content: space-between;
+  /* background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.1) 100%); */
 }
 .banner .left-side {
   width: 50%;
@@ -105,6 +107,7 @@ nav .logo p {
   border: none;
   font-size: 18px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .btn-container .banner-btn-app {
   padding: 14px 35px;
@@ -115,6 +118,7 @@ nav .logo p {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .banner .right-side {
@@ -187,4 +191,111 @@ nav .logo p {
   line-height: 24px;
   letter-spacing: 0.5px;
   margin-top: 5px;
+}
+
+/* start hero section */
+#hero {
+  margin: 100px 0;
+}
+.title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+
+#hero .discription {
+  width: 600px;
+  margin: 0 auto;
+  padding: 5px 0 20px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  align-items: center;
+}
+.card-item {
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.card {
+  width: 200px;
+  flex-direction: column;
+  align-items: center;
+}
+.card-item img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.card-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.card-dis {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 7px;
+}
+/* banner section for mobile device */
+@media only screen and (max-width: 576px) {
+  .container {
+    margin: 20px;
+  }
+  .block {
+    display: none;
+  }
+  .none {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: start;
+  }
+  .banner h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .banner p {
+    margin: 20px 0;
+  }
+  .btn-container .banner-btn,
+  .btn-container .banner-btn-app {
+    padding: 10px 20px;
+  }
+  .banner .right-side .workout {
+    transform: translate(112%, 50%);
+    width: 170px;
+    flex-shrink: 0;
+  }
+  .banner .right-side .workout h2 {
+    font-size: 30px;
+  }
+  .banner .right-side .workout p {
+    font-size: 9px;
+  }
+  .banner .right-side .video {
+    transform: translate(0%, 240%);
+  }
+  /* hero section */
+  #hero .discription {
+    width: 100%;
+  }
+  .card-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
