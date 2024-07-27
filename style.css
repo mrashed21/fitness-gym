@@ -345,6 +345,7 @@ nav .logo p {
   .extra-run-container {
     flex-direction: column;
     gap: 50px;
+    padding: 30px;
   }
   .extra-run-container .left-side {
     width: 100%;
