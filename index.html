@@ -181,5 +181,82 @@
         </div>
       </div>
     </section>
+    <!-- BMI section -->
+    <section id="bmi">
+      <h2 class="title">BMI Calculator</h2>
+      <p class="discription">
+        We believe fitness should be accessible to everyone, everywhere,
+        regardless of income or <br />
+        access to a gym.
+      </p>
+      <div class="bmi-container">
+        <div class="container bmi-content flex">
+          <div class="left-side">
+            <h2 class="table-caption">BMI Calculator Chart</h2>
+            <table>
+              <thead>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="right-side">
+            <h2>Calculate your BMI</h2>
+            <p>
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+            <form>
+              <div class="input-data">
+                <input
+                  class="item1"
+                  type="text"
+                  placeholder="Height/cm"
+                  required
+                />
+                <input
+                  class="item2"
+                  type="text"
+                  placeholder="Weight/kg"
+                  required
+                />
+                <input class="item3" type="text" placeholder="Age" required />
+                <div class="relative">
+                  <input class="item4" type="text" placeholder="Sex" required />
+                  <i class="absolute fa-solid fa-angle-down"></i>
+                </div>
+                <div class="relative item5">
+                  <input
+                    type="text"
+                    placeholder=" Select an activity factor "
+                    required
+                  />
+                  <i class="absolute fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <input class="banner-btn" type="submit" value="Calculate" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
