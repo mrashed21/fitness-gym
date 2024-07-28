@@ -760,7 +760,7 @@ footer .reserved {
   .banner .right-side .workout {
     transform: translate(112%, 50%);
     width: 160px;
-    flex-shrink: 0;
+    padding: 10px 15px;
   }
   .banner .right-side .workout h2 {
     font-size: 30px;
