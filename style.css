@@ -733,7 +733,15 @@ footer .reserved {
 /* for mobile device */
 @media only screen and (max-width: 576px) {
 
-
+  .banner-btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .banner-btn-app {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  
   .container {
     margin: 20px;
   }
@@ -868,13 +876,7 @@ footer .reserved {
   .challenge-container .challenge-card {
     width: 100%;
   }
-  .challenge-container .challenge-card .banner-btn,
-  .banner-btn-app {
-    padding: 10px 15px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-  }
+  
   .footer {
     flex-direction: column;
     gap: 30px;
