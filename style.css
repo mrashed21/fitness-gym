@@ -759,7 +759,7 @@ footer .reserved {
   }
   .banner .right-side .workout {
     transform: translate(112%, 50%);
-    width: 170px;
+    width: 160px;
     flex-shrink: 0;
   }
   .banner .right-side .workout h2 {
